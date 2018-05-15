@@ -1,0 +1,227 @@
+@import "~normalize.css/normalize.css";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "globals";
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+/* override bootstrap CDN */
+@media (min-width: 800px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  height: calc(100% - 100px)
+}
+
+body {
+  background: palegoldenrod url("../public/images/bg.png") no-repeat fixed;
+  position: relative;
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+  width: 100%;
+  height: calc(100% - 100px);
+  /* height:100%; */
+  font-family: "Montserrat", sans-serif;
+  /* display: flex; */
+  overflow:hidden;
+}
+
+#root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+} 
+
+h1 {
+  color: red;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #77777a;
+}
+#top-container {
+  position: relative;
+  /* display: flex; */
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* height: 80vh; */
+  /* height: 100%; */
+  width: 100%;
+  height: 100%;
+  /* top: 0px; */
+  /* bottom: -50px; */
+}
+main {
+  background-color: white;
+  border: red 1px solid;
+}
+.main-content {
+  position: relative;
+  display: inline-block;
+  /* bottom:  0px; */
+  padding: 5px 0 5px 0;
+  flex-direction: column;
+  flex-shrink: 1;
+  width: 100%;
+  height: 100%;
+  /* bottom: 0px; */
+  /* min-height: 80%; */
+  overflow: auto;
+}
+.browse-container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  width: 100%;
+  height: 100%;
+  /* height: 500px; */
+  border: #0046ad 1px solid;
+  overflow: auto;
+}
+.panel-container {
+  position: relative;
+  height: 80%;
+}
+div.error-404 {
+  color: #c11;
+}
+header {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  margin-bottom: 0;
+  color: #fff;
+}
+.nav-link {
+  color: #fff;
+}
+.Breadcrumbs span a {
+  color: #0046ad;
+}
+@media (max-width: 767px) {
+  main > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main > .container .main-content {
+    padding: 5px 0 5px 0;
+  }
+}
+@media (min-width: 768px) {
+  main > .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .show-when-xs {
+    display: none;
+  }
+}
+.panel {
+  border-color: #95989a;
+  border-radius: 0;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.11);
+}
+
+.card-block {
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin: 0.75rem;
+}
+
+.dropdown {
+  position: relative;
+  border-width: 2px;
+  font-weight: 700;
+}
+
+@keyframes opacityAnimation {
+  12% {
+    opacity: 0.8;
+  }
+  19.5% {
+    opacity: 0.88;
+  }
+  37.2% {
+    opacity: 0.64;
+  }
+  40.5% {
+    opacity: 0.52;
+  }
+  52.7% {
+    opacity: 0.69;
+  }
+  60.2% {
+    opacity: 0.6;
+  }
+  66.6% {
+    opacity: 0.52;
+  }
+  70% {
+    opacity: 0.63;
+  }
+  79.9% {
+    opacity: 0.6;
+  }
+  84.2% {
+    opacity: 0.75;
+  }
+  91% {
+    opacity: 0.87;
+  }
+}
+
+@keyframes rotationAnimation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .fluid-datepicker {
+  .react-datepicker-wrapper,
+  .react-datepicker__input-container {
+    width: 100%
+  }
+  .rdt.form-control {
+    border: none;
+    padding: 0;
+  }
+} */
+
+.second-nav-submenu {
+  color: black !important;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .navbar-medium {
+    margin-top: 2.5em;
+  }
+}
+@media (min-width: 767px) {
+  .small-show {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbrand-small {
+    padding-left: 10px;
+  }
+  .small-hide {
+    display: none;
+  }
+}
